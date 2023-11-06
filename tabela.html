@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UFT-8" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tabela</title>
+  <head/>
+  <body>
+  </body>
+  <table>
+    <thead>
+    <tr>
+      <th>Primeiro Nome:</th>
+      <td>Carlos</td>
+      </thead>
+    </tr>
+    <tbody>
+    <tr>
+      <th rowspan="2">Telefone:</th>
+      <td>7654-1233</td>
+    </tr>
+    <tr>
+    <td class="implemento">6543-7777</td>
+    </tr>
+    </tbody>
+  </table>
+  <table>
+    <tr class="other">
+      <th>Nome</th>
+      <th colspan="2">Telefones</th>
+    </tr>
+    <tr>
+      <td>Maria</td>
+      <td>6785-6261</td>
+      <td>5210-5111</td>
+    </tr>
+    <tfoot>
+    <tr>
+      <td>Dino</td>
+      <td>5522-7189</td>
+      <td>5117-0000</td>
+    </tr>
+    </tfoot>
+  </table>
+  <table>
+    <tr class="letra">
+      <td></td>
+      <td>BASICO</td>
+      <td>PADRÃO</td>
+      <td>AVANÇADO</td>
+    </tr>
+    <tr class="ornamentos">
+      <td>Preço mensal</td>
+      <th class="cor1">$45</th>
+      <th class="cor2">$27</th>
+      <th class="cor3">$879</th>
+    </tr>
+    <tr>
+      <td>Comércial</td>
+      <td>1 usuário completo</td>
+      <td>5 usuários completos</td>
+      <td>usuários personalizados</td>
+    </tr>
+    <tr>
+      <td>Usuário limitado somente leitura</td>
+      <td>1.000 visualizações de email</td>
+      <td>2.000 visualizações de email</td>
+      <td>Visualizações de email personalizados</td> 
+    </tr>
+    <tr>
+      <td>Contatos</td>
+      <td>5 contatos por cliente</td>
+      <td>25 contatos por cliente</td>
+      <td>Contatos ilimitados</td>
+    </tr>
+    <tr>
+      <td>Café</td>
+      <td>5 xícaras</td>
+      <td>8 xícaras</td>
+      <td>10 xícaras</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="fundo">escolha o plano</td>
+      <td class="fundo2">escolha o plano</td>
+      <td class="fundo3">escolha o plano</td>
+    </tr>
+  </table>
+  <table>
+    <tr class="outro">
+      <td></td>
+      <td>
+        <div style="text-align:center;"><strong>Basic Price</strong></div>
+         <div style="text-align:center;">Advanced Price lorem ipsum dolor sit amet</div>
+      </td>
+      <td>
+        <div style="text-align:center;"><strong>Standart Price</strong></div>
+        <div style="text-align:center;">Lorem ipsum dolor sit amet</div>
+      </td>
+      <td>
+        <div style="text-align:center;"><strong>Advanced Price</strong></div>
+        <div style="text-align:center;">Lorem ipsum dolor sit amet</div>
+      </td>
+    </tr>
+    <tr class="meu">
+      <td>preço mensal</td>
+      <th>$29</th>
+      <th>$59</th>
+      <th>$139</th>
+    </tr>
+    <tr>
+      <td><strong>recursos</strong></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Armazenamento</td>
+      <td>1Gb</td>
+      <td>10Gb</td>
+      <td>20Gb</td>
+       </tr>
+       <tr>
+         <td>Pessoas</td>
+         <td>2</td>
+         <td>20</td>
+         <td>ilimitado</td>
+       </tr>
+       <tr>
+         <td>Análise de fraude</td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+        <tr>
+         <td>Suporte 24/7</td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+        <tr>
+         <td>Consulta</td>
+         <td></td>
+         <td></td>
+         <td></td>
+       </tr>
+        <tr>
+         <td></td>
+         <td class="fundo4">escolha o plano</td>
+         <td class="fundo5">escolha o plano</td>
+         <td class="fundo6">escolha o plano</td>
+       </tr>
+  </table>
+  <style>
+  table{
+      padding: 10px;
+      border: 1px solid #2F4F4F;
+      width: 1000px;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .implemento{
+      background-color: #D3D3D3;
+    }
+    th,td{
+      border: 1px solid #D3D3D3;
+      padding: 10px;
+      width: 500px;
+      border-collapse: collapse;
+    }
+    .other{
+      background-color: #D3D3D3;
+    }
+    tfoot{
+      background-color: #D3D3D3;
+    }
+    .meu{
+      border: none;
+    }
+    thead{
+      background-color: #DCDCDC;
+    }
+    .letra {
+     color: #C0C0C0 ; 
+    }
+    .ornamentos th{
+    font-size: 25px;
+    color: white;
+    }
+    .cor1{
+      background-color: #B0E0E6;
+    }
+    .cor2{
+      background-color: #40E0D0;
+    }
+    .cor3{
+      background-color: #4682B4;
+    }
+    .fundo{
+      background-color: #B0E0E6;
+    }
+    .fundo2{
+      background-color: #40E0D0;
+      
+    }
+    .fundo3{
+      background-color: #4682B4;
+    }
+    .outro{
+      background-color: #D3D3D3;
+    }
+    .meu th{
+      font-size: 20px;
+    }
+    .fundo4{
+      background-color: red;
+    }
+    .fundo5{
+      background-color: red;
+    }
+    .fundo6{
+      background-color:red;
+    }
+  </style>
+</html>
