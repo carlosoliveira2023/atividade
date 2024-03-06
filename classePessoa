@@ -1,0 +1,17 @@
+import java.time.LocalDate
+public class Pessoa{
+  String nome;
+  String sobrenome;
+  LocalDate dataNas;
+  String email;
+  String telefone;
+}
+public static void main (String[]args){
+  Pessoa pessoa= new Pessoa();
+  pessoa.nome="Carlos"
+  pessoa.sobrenome="Oliveira"
+  pessoa.dataNas= LocalDate.of(2001,05,30);
+  pessoa.email="carlos@gmail.com";
+  pessoa.telefone="5362-8976";
+}
+}
