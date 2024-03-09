@@ -1,17 +1,36 @@
 import java.time.LocalDate
 public class Pessoa{
-  String nome;
-  String sobrenome;
-  LocalDate dataNas;
-  String email;
-  String telefone;
+ private String nome;
+ private  String sobrenome;
+ private LocalDate dataNas;
+ private String email;
+ private  String telefone;
+ private final String CPF;
+ private final String PAIS_NACIONALIDADE;
 }
-public static void main (String[]args){
-  Pessoa pessoa= new Pessoa();
-  pessoa.nome="Carlos"
-  pessoa.sobrenome="Oliveira"
-  pessoa.dataNas= LocalDate.of(2001,05,30);
-  pessoa.email="carlos@gmail.com";
-  pessoa.telefone="5362-8976";
+Public Pessoa(String nome, String sobrenome, LocalDate dataNas, String email, String telefone){
+  this.nome="Carlos";
+  this.sobrenome="Oliveira";
+  this.dataNas= LocalDate.of(2001,05,30);
+  this.email="carlos@gmail.com";
+  this.telefone="5362-8976";
+  this.CPF="11100033377";
+  this.PAIS_NACIONALIDADE="Brasil";
 }
+Public void andar(){
+  System.out.println(this.nome + "está andando");
+}
+Public void comer(){
+  System.out.println(this.nome+"está comendo");
+}
+Public void correr(){
+  System.out.println(this.nome+"está correndo");
+}
+Public void dormir(){
+  System.out.println(this.nome+"está dormindo");
+}
+public void mostrarInformacoes(){
+  System.out.println("this.nome"+""+"this.sobrenome");
+  System.out.println("this.email"+"-"+"this.dataNas"+"-"+"this.telefone");
+  System.out.println("this.PAIS_NACIONALIDADE");
 }
