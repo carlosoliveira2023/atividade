@@ -1,0 +1,32 @@
+import java.util.Map;
+
+@RestController
+@RequestMapping("/contato")
+public class ContatoController {
+
+Private Contato contato;
+
+//Método Get
+@GetMapping
+public Contato getContato(){
+return this.contato;
+}
+//Método Post
+@PostMapping
+public String criar Contato(@RequestBody Map<String,String>body){
+String nome = body.get ("nome");
+String telefone = body.get ("telefone");
+String email = body.get ("email");
+
+this.contato= new Contato(nome, telefone, email);
+return "Contato criado!!";
+}
+//Método Delete
+@DeleteMapping("/{telefone}")
+public String deletarContato(@PathVariable String telefone){
+if(this.contato != null && this.contato.getTelefone().equals(telefone)){
+this.contato=null;
+return "Contato excluído";
+}else{
+return "Contato não encontrado";
+}
