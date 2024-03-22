@@ -1,0 +1,30 @@
+class Pessoa{
+  nome: string;
+  idade: number;
+
+constructor(nome:string, idade:number){
+  this.nome=nome;
+  this.idade=idade;
+}
+mostrarNomeEIdade(){
+  return this.nome+"-"+this.idade;
+}
+}
+
+class Empregado extends Pessoa{
+  salario: number;
+  
+  constructor(nome:string, idade:number,salario:number){
+    super(nome,idade);
+    this.salario=salario;
+  }
+  mostrarSalario():number{
+    return this.salario;
+  }
+}
+ const pessoa = new Pessoa("Carlos",22);
+console.log (pessoa.mostrarNomeEIdade());
+  
+  const empregado = new Empregado("Carlos",22,1412);
+  console.log(empregado.mostrarNomeAndIdade());
+  console.log(empregado.mostrarSalario());
